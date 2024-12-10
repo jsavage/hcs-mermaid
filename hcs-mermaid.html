@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HCS Parser & Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>-->
+    <!-- To -->
+    <script src="mermaid.min.js"></script>
+    <style>
+        .container { display: flex; }
+        .input-section { width: 300px; padding: 10px; }
+        .output-section { flex-grow: 1; padding: 10px; }
+        textarea { width: 100%; height: 150px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>HCS Input</h2>
+            <label for="hcs-input">HCS Description:</label>
+<textarea id="hcs-input" name="hcs-input">person microwave: open close start stop / beep
+microwave [ magnetron ]
+magnetron food: heat</textarea>
+             <button onclick="parseAndVisualize()">Generate Diagram</button>
+        </div>
+        <div class="output-section">
+            <div id="hcs-diagram" class="mermaid"></div>
+        </div>
+    </div>
+    <script src="hcs-parser.js"></script>
+    <script src="hcs-visualizer.js"></script>
+    <script src="hcs-tests.js"></script>
+</body>
+</html>
