@@ -1,3 +1,5 @@
+A lightweight HCS Parser and Visualizer implemented using Mermaid.js
+
 Credits
 This project was originally inspired by and draws upon great work by mstone in https://github.com/mstone/depict which is licensed under the MIT license as is this one.
 This work was intended to re-implement the functionality but in a language I could better understand to facilitate enhancement.  
